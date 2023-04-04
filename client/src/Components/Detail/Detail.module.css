@@ -1,0 +1,16 @@
+.container {
+  background-color: #112a30;
+  background-size: cover;
+  background-attachment: inherit;
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+}
+
+.image {
+  width: 600px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 2%;
+  height: auto;
+}

@@ -1,0 +1,139 @@
+.promo {
+  padding-top: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1c1c1d;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
+
+.glowOnHover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glowOnHover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glowOnHover:active {
+  color: #000;
+}
+
+.glowOnHover:active:after {
+  background: transparent;
+}
+
+.glowOnHover:hover:before {
+  opacity: 1;
+}
+
+.glowOnHover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    100deg,
+    #00395b 0,
+    #00385d 3.57%,
+    #00375e 7.14%,
+    #02355e 10.71%,
+    #19335d 14.29%,
+    #26315b 17.86%,
+    #312e59 21.43%,
+    #3a2c56 25%,
+    #412952 28.57%,
+    #48274d 32.14%,
+    #4d2448 35.71%,
+    #512243 39.29%,
+    #55213e 42.86%,
+    #571f38 46.43%,
+    #591f32 50%,
+    #5a1f2c 53.57%,
+    #5a2027 57.14%,
+    #592121 60.71%,
+    #57231c 64.29%,
+    #552517 67.86%,
+    #522812 71.43%,
+    #4f2a0e 75%,
+    #4b2c09 78.57%,
+    #472f06 82.14%,
+    #423104 85.71%,
+    #3d3303 89.29%,
+    #383404 92.86%,
+    #323606 96.43%,
+    #2c3809 100%
+  );
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

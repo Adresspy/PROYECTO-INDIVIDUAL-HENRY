@@ -1,0 +1,29 @@
+.container {
+  background-image: url("../../Utils/homeImage.jpg");
+  background-color: #112a30;
+  background-size: cover;
+  background-attachment: inherit;
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+.createBtn {
+  position: fixed;
+  bottom: 45px;
+  right: 50px;
+  z-index: 10;
+  border-radius: 100%;
+  padding: 33px 10px;
+
+  background-color: #2d949d;
+  border: 1px solid white;
+  color: white;
+  font-size: 23px;
+}
+
+.createBtn:hover {
+  background-color: #104852;
+  cursor: pointer;
+}

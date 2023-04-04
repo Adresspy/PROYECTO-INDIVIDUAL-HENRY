@@ -1,0 +1,84 @@
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20%);
+}
+
+.cardContainer:hover {
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  box-shadow: lightblue 10px 10px 10px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.gameImg {
+  width: 310px;
+  height: 160px;
+  -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+}
+
+.genresContainer,
+.genre {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px 6px;
+  text-decoration: none;
+}
+
+.genresContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 16px;
+}
+.genre {
+  background-color: #445089;
+  padding: 0px 10px;
+  border-radius: 6px;
+  color: white;
+}
+
+.rating {
+  font-size: 16px;
+  bottom: -20%;
+}
+
+.titleContain {
+  height: 50px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 21px;
+  font-weight: bold;
+}

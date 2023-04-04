@@ -1,0 +1,8 @@
+export const GET_VIDEOGAMES = "GET_VIDEOGAMES";
+export const GET_GENRES = "GET_GENRES";
+export const FILTER_BY_GENRES = "FILTER_BY_GENRES";
+export const FILTER_BY_ORDER = "FILTER_BY_ORDER";
+export const FILTER_CREATED = "FILTER_CREATED";
+export const VIDEO_GAMES_NAME = "VIDEO_GAMES_NAME";
+export const POST_VIDEOGAME = "POST_VIDEOGAME"
+export const GET_DETAIL = "GET_DETAIL"
